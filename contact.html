@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.css">
+    <title>Contact - Kebantai</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="dark-background"></div>
+        <header class="page-header">
+            <div class="header-menu">
+                <div class="header-logo">KEBANTAI</div>
+                <ul class="left-header-tab">
+                    <a class="left-tab-options">
+                        <span href="#" class="left-tab-icon"><img src="./images/Header images/home.svg" alt=""></span>
+                        <p href="#" class="left-tab-name">Home</p>
+                    </a>
+                    <a class="left-tab-options">
+                        <span href="#" class="left-tab-icon"><img src="./images/Header images/why.svg" alt=""></span>
+                        <p href="#" class="left-tab-name">Why Kebantai?</p>
+                    </a>
+                    <a class="left-tab-options">
+                        <span href="#" class="left-tab-icon"><img src="./images/Header images/about.svg" alt=""></span>
+                        <p href="#" class="left-tab-name">About Us</p>
+                    </a>
+                    <a class="left-tab-options">
+                        <span href="#" class="left-tab-icon"><img src="./images/Header images/contact.svg"
+                                alt=""></span>
+                        <p href="#" class="left-tab-name">Contact</p>
+                    </a>
+                </ul>
+            </div>
+            <div class="navigation-toggle">
+                <img class="navigation-toggle-icon" src="./images/Header images/burger-icon.svg" alt="">
+            </div>
+            <div class="navigation right-header-tab">
+                <a href="#" class="right-tab-options">
+                    <span class="right-tab-icon"><img src="./images/Header images/post.svg" alt=""></span>
+                    <p class="right-tab-name">Post Requests</p>
+                </a>
+                <a href="#" class="right-tab-options">
+                    <span class="right-tab-icon"><img src="./images/Header images/matches.svg" alt=""></span>
+                    <p class="right-tab-name">Matches</p>
+                </a>
+                <a href="#" class="right-tab-options">
+                    <span class="right-tab-icon"><img src="./images/Header images/schedule.svg" alt=""></span>
+                    <p class="right-tab-name">Schedule</p>
+                </a>
+                <a href="#" class="right-tab-options">
+                    <span class="right-tab-icon"><img src="./images/Header images/chatroom.svg" alt=""></span>
+                    <p class="right-tab-name">Chatroom</p>
+                </a>
+                <a href="#" class="right-tab-options">
+                    <span class="right-tab-icon"><img src="./images/Header images/profile.svg" alt=""></span>
+                    <p class="right-tab-name">Profile</p>
+                </a>
+            </div>
+        </header>
+        <form class="content" autocomplete="off">
+            <div class="contact-text">
+                <h2 class="contact-title">
+                    Contact the<br> developers!
+                </h2>
+                <div class="contact-subtitle">
+                    Please fill out these informations!
+                </div>
+            </div>
+            <div class="contact-box">
+                <div class="form__prompt">
+                    <input class="form__input" type="text" name="fullname" id="fullname"
+                        placeholder="ex: Ernest Salim" onkeypress="return event.keyCode != 13;">
+                    <label for="fullname" class="form__subtitle">Full Name</label>
+                </div>
+                <div class="form__prompt">
+                    <input class="form__input" type="email" name="email" id="email"
+                        placeholder="ex: salim.ernest17@gmail.com" onkeypress="return event.keyCode != 13;">
+                    <label for="email" class="form__subtitle">Email</label>
+                </div>
+                <div class="form__prompt">
+                    <div class="select-box">
+                        <div class="options-box">
+                            <div class="option">
+                                <input type="radio" class="radio" name="concern" id="concern" value="Business Inquiries">
+                                <label for="concern">Business Inquiries</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="concern" id="concern" value="Request a Location">
+                                <label for="concern">Request a Location</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="concern" id="concern" value="Request Sport Additions">
+                                <label for="concern">Request Sport Additions</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="concern" id="concern" value="Question to Owners">
+                                <label for="concern">Question to Owners</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="concern" id="concern" value="Others">
+                                <label for="concern">Others</label>
+                            </div>                         
+                        </div>
+                        <div class="option-selected">
+                            choose your concern
+                        </div>
+                    </div>
+                    <label class="form__subtitle">Concern</label>
+                </div>
+                <div class="form__prompt">
+                    <textarea class="form__textarea" name="messages" id="messages" maxlength="400" placeholder="max 400 characters"></textarea>
+                    <label for="messages" class="form__subtitle">Messages</label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="./contact.js"></script>
+</body>
+</html>
