@@ -85,3 +85,16 @@ selectedAll.forEach(selected => {
 //     });
 //   });
 // })
+
+let error = document.querySelector(".error");
+let error_text = document.querySelector(".error-text");
+let errorClose = document.querySelector('.error-circle');
+let errorBox = document.querySelector('.error');
+
+errorClose.addEventListener('click', () => {
+    errorBox.style.transform = "scale(0.01)";
+    errorBox.style.opacity = "0";
+    if (errorBox.style.opacity === "0") {
+        errorBox.style.display = "none";
+    }
+});

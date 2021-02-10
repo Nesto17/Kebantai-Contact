@@ -59,7 +59,7 @@
                 </a>
             </div>
         </header>
-        <form class="content" autocomplete="off">
+        <form action="./mail_handler.php" method="post" class="content" autocomplete="off">
             <div class="contact-text">
                 <h2 class="contact-title">
                     Contact the<br> developers!
@@ -113,11 +113,21 @@
                     <textarea class="form__textarea" name="messages" id="messages" maxlength="400" placeholder="max 400 characters"></textarea>
                     <label for="messages" class="form__subtitle">Messages</label>
                 </div>
+                <input class="form__submit" type="submit">
             </div>
         </form>
+        <div class="error-section">
+            <div class="error">
+                <div class="error-circle">
+                    <p class="error-close">+</p>
+                </div>
+                <div class="error-box">
+                    <img class="error-icon" src="./images/Exclamation.svg"></img>
+                    <p class="error-text">Please enter your username</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-
 
     <script src="./contact.js"></script>
 </body>
