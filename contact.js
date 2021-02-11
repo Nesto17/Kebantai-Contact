@@ -98,3 +98,14 @@ errorClose.addEventListener('click', () => {
         errorBox.style.display = "none";
     }
 });
+
+let modal = document.querySelector('.modal');
+let modalClose = document.querySelector('.modal-close');
+
+modal.addEventListener('click', () => {
+  modal.style.display = "none";
+})
+
+modalClose.addEventListener('click', () => {
+  modal.style.display = "none";
+})
