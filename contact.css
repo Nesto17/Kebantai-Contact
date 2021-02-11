@@ -619,12 +619,14 @@ a {
   font-size: 23px;
   font-weight: 600;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .modal-subtitle {
   font-size: 13px;
   font-weight: 400;
   color: #acacac;
+  text-align: center;
 }
 
 @media (max-width: 1144px) {
@@ -911,6 +913,19 @@ a {
     font-size: 14px;
     font-weight: 500;
   }
+
+  .modal-box {
+    width: 350px;
+    padding: 0px 20px;
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+  .modal-subtitle {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -964,5 +979,9 @@ a {
   .error-icon {
     left: -10px;
     bottom: -8px;
+  }
+
+  .modal-box {
+    width: 250px;
   }
 }
