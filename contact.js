@@ -109,3 +109,9 @@ modal.addEventListener('click', () => {
 modalClose.addEventListener('click', () => {
   modal.style.display = "none";
 })
+
+let buttonSubmit = document.querySelector('.form__submit');
+buttonSubmit.addEventListener('click', (e) => {
+  e.preventDefault();
+  modal.style.display = "unset";
+});
