@@ -17,9 +17,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  padding: 0px 0px 30px;
   overflow-x: hidden;
   overflow-y: auto;
   background: #001427;
@@ -258,7 +257,7 @@ a {
   height: auto;
   width: 100%;
   margin-top: 20px;
-  padding: 30px 150px 0px 100px;
+  padding: 30px 150px 30px 100px;
 
   display: flex;
   justify-content: space-between;
