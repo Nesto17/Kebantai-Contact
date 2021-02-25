@@ -23,6 +23,7 @@
   font-size: 230px;
   bottom: -110px;
   left: -30px;
+  pointer-events: none;
 
   z-index: 0;
 }
