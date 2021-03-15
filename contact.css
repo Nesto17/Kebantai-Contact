@@ -173,6 +173,16 @@ a {
   padding: 7px 30px;
 }
 
+.left-tab-options.active .left-tab-icon {
+  background: #ffc833;
+  box-shadow: 0px 0px 15px rgba(254, 188, 47, 0.5);
+}
+
+.left-tab-options.active .left-tab-icon + .left-tab-name {
+  opacity: 1;
+  padding: 7px 30px;
+}
+
 .right-header-tab {
   margin-right: 3rem;
   width: 760px;
