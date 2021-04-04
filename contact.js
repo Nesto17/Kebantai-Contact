@@ -111,7 +111,16 @@ modalClose.addEventListener('click', () => {
 })
 
 let buttonSubmit = document.querySelector('.form__submit');
+const form = document.querySelector('#contact_form');
+
 buttonSubmit.addEventListener('click', (e) => {
   e.preventDefault();
   modal.style.display = "unset";
+
+  emailjs.sendForm('service_p6ieyp5', 'template_k3k88a4', form)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
 });
